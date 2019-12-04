@@ -83,9 +83,13 @@ function give() {
 
 if (getUrlVars()['type'] == 'reset') {
   OWNID = parseInt(getUrlVars()['id']);
+  var defBuilding = OWNID%5
+  var defInv = [0,0,0,0,0,0,0,0,0,0]
+  defInv[defBuilding+5] = 1;
+  defInv[defBuilding+5] = 2;
   localStorage.setItem('catc3_ownid', OWNID)
   localStorage.setItem('catc3_ntransid', 0);
-  localStorage.setItem('catc3_invent', [0,0,0,0,0,0,0,0,0,0]);
+  localStorage.setItem('catc3_invent', defInv);
   localStorage.setItem('catc3_stransid',"[]");
 
   setTimeout(function() {
