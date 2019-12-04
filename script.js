@@ -1,5 +1,5 @@
 const DEFLINK = "https://codemaker4.github.io/catancalc3/index.html"
-const NAMES = ["graan","hout","baksteen","schaap","ijzer","weiland","bos","boederij","baksteenfabriek","mijn"];
+const NAMES = ["graan","hout","schaap","baksteen","ijzer","weiland","bos","boederij","baksteenfabriek","mijn"];
 var OWNID = 0;
 var nextTransID = 0;
 var seenTransID = [];
