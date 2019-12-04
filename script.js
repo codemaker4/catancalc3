@@ -44,6 +44,7 @@ function request() {
   confNum += cartList.reduce((a, b) => a + b, 0) // https://stackoverflow.com/questions/1230233/how-to-find-the-sum-of-an-array-of-numbers
   link += confNum.toString();
 
+  console.log(link);
   new QRious({
       element: document.getElementById('qr'),
       value: link,
@@ -86,7 +87,7 @@ if (getUrlVars()['type'] == 'reset') {
   var defBuilding = OWNID%5
   var defInv = [0,0,0,0,0,0,0,0,0,0]
   defInv[defBuilding+5] = 1;
-  defInv[defBuilding+5] = 2;
+  defInv[defBuilding] = 2;
   localStorage.setItem('catc3_ownid', OWNID)
   localStorage.setItem('catc3_ntransid', 0);
   localStorage.setItem('catc3_invent', defInv);
@@ -94,6 +95,7 @@ if (getUrlVars()['type'] == 'reset') {
 
   setTimeout(function() {
     var link = DEFLINK + "?type=reset&id=" + (OWNID + 1).toString();
+    console.log(link);
     new QRious({
         element: document.getElementById('qr'),
         value: link,
@@ -122,13 +124,13 @@ setTimeout(function () {
     document.getElementById('bul_'+i.toString()+"_m").onclick = new Function("shkart("+(i+5).toString()+",-1);");
 
     document.getElementById('rec_'+i.toString()).innerHTML = NAMES[i] + ": " + inventory[i].toString();
-    document.getElementById('bul_'+i.toString()).innerHTML = NAMES[i+1] + ": " + inventory[i+1].toString();
+    document.getElementById('bul_'+i.toString()).innerHTML = NAMES[i+5] + ": " + inventory[i+5].toString();
   }
 },0);
 
 function shkart(type,amount) {
   if (shoppingCart[type] + amount < 0){
-    alert("je kan geen negatieve vraag hebben");
+    // alert("je kan geen negatieve vraag hebben");
     return
   }
   shoppingCart[type] += amount;
