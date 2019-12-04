@@ -1,0 +1,15 @@
+when the page is loaded, it comes with some url parameters. they indicate what should be done
+
+type="reset";id=<n>
+  this is when the game starts. All localstorage is reset, the ID is used, and it generates a new qrcode with an incremented ID for the next person.
+
+type="request";askID=<n>;cart=[<n>*10];conf=<n>
+  this is when someone pressed vraag and the qr code was scanned by this device. the ask id is the id of the person who asked for something. rec and bul contain 5 values saying how much of everything is asked.
+  the conf is a security thing. add all numbers together and put it into a magic formula. Only continue with the operation if the conf is correct according to won calculations
+  when a device gets this code, it will ask the user if it is ok, then it will delete the asked resources and generate a qr code type="give"
+
+type="give";askID=<n>;giveID=<n>;transID=<n>;cart=[<n>*10];conf=<n>
+  this is when a request has been accepted, the recourses have been deleted and a new qrcode was scanned my this device. This qr code is to make sure that the recouces can be given.
+  first we need to check if everything is OK. askID should be the same as own ID, and conf should be correct.
+  giveID is the person who gave stuff, and transID is the howmanyeth give transaction it is for the other person. Any combination of the two should only happen once. If this device already got that combination of
+  that giveID and transID, the code was scanned twice, and the recieve should be aborted.

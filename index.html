@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>catancalc 3</title>
+    <script src="qrious.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>Jouw spul</h2>
+    <div class="rec_div">
+      <h3>Grondstoffen</h3>
+      <ul>
+        <li id="rec_0">graan: 0</li>
+        <li id="rec_1">hout: 0</li>
+        <li id="rec_2">schaap: 0</li>
+        <li id="rec_3">baksteen: 0</li>
+        <li id="rec_4">ijzer: 0</li>
+      </ul>
+    </div>
+    <div class="bul_div">
+      <h3>Gebouwen</h3>
+      <ul>
+        <li id="bul_0">weiland: 0</li>
+        <li id="bul_1">bos: 0</li>
+        <li id="bul_2">boederij: 0</li>
+        <li id="bul_3">baksteenfabriek: 0</li>
+        <li id="bul_4">mijn: 0</li>
+      </ul>
+    </div>
+    <h2>Boodschappenlijstje</h2>
+    <div class="transSel">
+      <div class="rec_div">
+        <h3>Grondstoffen</h3>
+      </div>
+      <div class="bul_div">
+        <h3>Gebouwen</h3>
+      </div>
+      <div class="rec_div smaller">
+        <ul>
+          <li id="t_rec_0">graan: 0</li>
+          <li id="t_rec_1">hout: 0</li>
+          <li id="t_rec_2">baksteen: 0</li>
+          <li id="t_rec_3">schaap: 0</li>
+          <li id="t_rec_4">ijzer: 0</li>
+        </ul>
+      </div>
+      <div class="pm_div">
+        <button type="button" class = "pm_p" id="rec_0_p">+</button><button type="button" class = "pm_m" id="rec_0_m">-</button>
+        <button type="button" class = "pm_p" id="rec_1_p">+</button><button type="button" class = "pm_m" id="rec_1_m">-</button>
+        <button type="button" class = "pm_p" id="rec_2_p">+</button><button type="button" class = "pm_m" id="rec_2_m">-</button>
+        <button type="button" class = "pm_p" id="rec_3_p">+</button><button type="button" class = "pm_m" id="rec_3_m">-</button>
+        <button type="button" class = "pm_p" id="rec_4_p">+</button><button type="button" class = "pm_m" id="rec_4_m">-</button>
+      </div>
+      <div class="bul_div smaller">
+        <ul>
+          <li id="t_bul_0">weiland: 0</li>
+          <li id="t_bul_1">bos: 0</li>
+          <li id="t_bul_2">boederij: 0</li>
+          <li id="t_bul_3">baksteenfabriek: 0</li>
+          <li id="t_bul_4">mijn: 0</li>
+        </ul>
+      </div>
+      <div class="pm_div">
+        <button type="button" class = "pm_p" id="bul_0_p">+</button><button type="button" class = "pm_m" id="bul_0_m">-</button>
+        <button type="button" class = "pm_p" id="bul_1_p">+</button><button type="button" class = "pm_m" id="bul_1_m">-</button>
+        <button type="button" class = "pm_p" id="bul_2_p">+</button><button type="button" class = "pm_m" id="bul_2_m">-</button>
+        <button type="button" class = "pm_p" id="bul_3_p">+</button><button type="button" class = "pm_m" id="bul_3_m">-</button>
+        <button type="button" class = "pm_p" id="bul_4_p">+</button><button type="button" class = "pm_m" id="bul_4_m">-</button>
+      </div>
+    </div>
+    <canvas id="qr"></canvas>
+    <div class="buttons">
+      <button type="button" id="trans">transacties</button>
+      <button type="button" id="theme">donker thema</button>
+    </div>
+  </body>
+</html>

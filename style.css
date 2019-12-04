@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+}
+
+.rec_div {
+  float: left;
+  width: 50%;
+  margin: 0;
+  font-size: 5vw;
+}
+
+.bul_div {
+  float: left;
+  width: 50%;
+  margin: 0;
+  font-size: 5vw;
+}
+
+.smaller {
+  width: 40%;
+  font-size: 4vw;
+}
+
+.pm_div {
+  float: left;
+  width: 10%;
+  padding-top: 4.5vw;
+}
+
+.pm_p {
+  float: left;
+  width: 50%;
+  height: 4.5vw;
+  border: 0;
+  background-color: #0F0;
+  font-size: 4vw;
+}
+
+.pm_m {
+  float: left;
+  width: 50%;
+  height: 4.5vw;
+  border: 0;
+  background-color: #F00;
+  font-size: 4vw;
+}
+
+.buttons {
+  float: left;
+  width: 100%;
+  height: 15vw;
+  margin: 0;
+}
+
+ul {
+  padding-left: 7vw;
+}
+
+h2 {
+  font-size: 6vw;
+}
+
+h3 {
+  margin: 0;
+  font-size: 5vw;
+}
+
+#trans {
+  float: left;
+  width: 50%;
+  height: 15vw;
+  margin: 0;
+  border: 0;
+  font-size: 5vw;
+  background-color: #FF0;
+}
+
+#theme {
+  float: left;
+  width: 50%;
+  height: 15vw;
+  margin: 0;
+  border: 0;
+  font-size: 5vw;
+  background-color: #CCC;
+}
+
+#confReq {
+  float: left;
+  width: 100%;
+  height: 15vw;
+  margin: 0;
+  border: 0;
+  font-size: 5vw;
+  background-color: #5FF;
+}
