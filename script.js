@@ -48,7 +48,7 @@ function request() {
   new QRious({
       element: document.getElementById('qr'),
       value: link,
-      size: document.innerWidth
+      size: innerWidth
   })
   alert("Ok. Nu moet de ontvanger de qr code scannen")
 
