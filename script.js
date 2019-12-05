@@ -111,7 +111,7 @@ inventory = JSON.parse("[" + localStorage.getItem('catc3_invent') + "]");
 seenTransID = JSON.parse("[" + localStorage.getItem('catc3_stransid') + "]");
 
 if (getUrlVars()['type'] == 'request') {
-  request()
+  setTimeout(request, 0)
 } else if (getUrlVars()['type'] == 'give') {
   give();
 }
