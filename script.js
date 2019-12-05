@@ -35,6 +35,7 @@ function request() {
   for (var i = 0; i < cartList.length; i++) {
     inventory[i] -= cartList[i];
   }
+  localStorage.setItem("catc3_invent", inventory)
 
   // type="give";askID=<n>;giveID=<n>;transID=<n>;cart=[<n>*10];conf=<n>
   var link = DEFLINK + "?type=give&askID=" + askID.toString();
